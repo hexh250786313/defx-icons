@@ -46,7 +46,7 @@ class Column(Base):
             )
 
     def generate_highlights_map(self) -> None:
-        self.item_hl('default_icon', '')
+        self.item_hl('default_icon', 'DefxIconsDefaultIcon')
         self.item_hl('mark_icon', 'DefxIconsMarkIcon')
         self.item_hl('copy_icon', 'DefxIconsCopyIcon')
         self.item_hl('link_icon', 'DefxIconsLinkIcon')
@@ -175,6 +175,7 @@ class Column(Base):
         if not self.settings['enable_syntax_highlight']:
             return commands
 
+        commands += self.syn_item('icon_default', 'default_icon', 'DefxIconsDefaultIcon')
         commands += self.syn_item('icon_mark', 'mark_icon', 'DefxIconsMarkIcon')
         commands += self.syn_item('icon_copy', 'copy_icon', 'DefxIconsCopyIcon')
         commands += self.syn_item('icon_link', 'link_icon', 'DefxIconsLinkIcon')
