@@ -17,52 +17,10 @@ let s:nested_opened_tree_icon = get(g: ,'defx_icons_nested_opened_tree_icon', '�
 let s:copy_icon = get(g:, 'defx_icons_copy_icon', '')
 let s:link_icon = get(g:, 'defx_icons_link_icon', '')
 let s:move_icon = get(g:, 'defx_icons_move_icon', '')
-" let s:default_color = synIDattr(hlID('Normal'), 'fg')
-let s:default_color = '6d8086'
-
-let s:gui_colors = extend({
-      \ 'brown': '905532',
-      \ 'aqua': '3AFFDB',
-      \ 'blue': '689FB6',
-      \ 'darkBlue': '44788E',
-      \ 'purple': '834F79',
-      \ 'lightPurple': '834F79',
-      \ 'red': 'AE403F',
-      \ 'beige': 'F5C06F',
-      \ 'yellow': 'F09F17',
-      \ 'orange': 'D4843E',
-      \ 'darkOrange': 'F16529',
-      \ 'pink': 'CB6F6F',
-      \ 'salmon': 'EE6E73',
-      \ 'green': '8FAA54',
-      \ 'lightGreen': '31B53E',
-      \ 'white': 'FFFFFF',
-      \ 'default': s:default_color,
-      \ }, get(g:, 'defx_icons_gui_colors', {}))
-
-let s:term_colors = extend({
-      \ 'brown'       : 130,
-      \ 'aqua'        : 66,
-      \ 'blue'        : 67,
-      \ 'darkBlue'    : 57,
-      \ 'purple'      : 60,
-      \ 'lightPurple' : 103,
-      \ 'red'         : 131,
-      \ 'beige'       : 137,
-      \ 'yellow'      : 229,
-      \ 'orange'      : 208,
-      \ 'darkOrange'  : 166,
-      \ 'pink'        : 205,
-      \ 'salmon'      : 209,
-      \ 'green'       : 65,
-      \ 'lightGreen'  : 108,
-      \ 'white'       : 255,
-      \ 'default'       : 231,
-      \ }, get(g: ,'defx_icons_term_colors', {}))
 
 let s:extensions = extend({
       \ 'Dockerfile': { 'icon': '󰡨', 'color': '458ee6', 'term_color': '68', },
-      \ 'R': { 'icon': '󰟔', 'color': '358a5b', 'term_color': '29', },
+      \ 'R': { 'icon': '󰟔', 'color': '2266ba', 'term_color': '25', },
       \ 'aac': { 'icon': '', 'color': '66D8EF', 'term_color': '45', },
       \ 'ai': { 'icon': '', 'color': 'cbcb41', 'term_color': '185', },
       \ 'applescript': { 'icon': '', 'color': '6d8085', 'term_color': '66', },
@@ -230,7 +188,7 @@ let s:extensions = extend({
       \ 'pyo': { 'icon': '', 'color': 'ffe291', 'term_color': '222', },
       \ 'pyx': { 'icon': '', 'color': '5aa7e4', 'term_color': '39', },
       \ 'query': { 'icon': '', 'color': '90a850', 'term_color': '107', },
-      \ 'r': { 'icon': '󰟔', 'color': '358a5b', 'term_color': '29', },
+      \ 'r': { 'icon': '󰟔', 'color': '2266ba', 'term_color': '25', },
       \ 'rake': { 'icon': '', 'color': '701516', 'term_color': '52', },
       \ 'razor': { 'icon': '󱦘', 'color': '512bd4', 'term_color': '56', },
       \ 'rb': { 'icon': '', 'color': '701516', 'term_color': '52', },
@@ -338,7 +296,7 @@ let s:exact_matches = extend({
       \ '.zshrc': { 'icon': '', 'color': '89e051', 'term_color': '113', },
       \ '_gvimrc': { 'icon': '', 'color': '019833', 'term_color': '28', },
       \ '_vimrc': { 'icon': '', 'color': '019833', 'term_color': '28', },
-      \ 'R': { 'icon': '󰟔', 'color': '358a5b', 'term_color': '29', },
+      \ 'R': { 'icon': '󰟔', 'color': '2266ba', 'term_color': '25', },
       \ 'avif': { 'icon': '', 'color': 'a074c4', 'term_color': '140', },
       \ 'brewfile': { 'icon': '', 'color': '701516', 'term_color': '52', },
       \ 'build': { 'icon': '', 'color': '89e051', 'term_color': '113', },
@@ -365,7 +323,7 @@ let s:exact_matches = extend({
       \ 'package-lock.json': { 'icon': '', 'color': '7a0d21', },
       \ 'procfile': { 'icon': '', 'color': 'a074c4', 'term_color': '197', },
       \ 'py.typed': { 'icon': '', 'color': 'ffbc03', 'term_color': '214', },
-      \ 'r': { 'icon': '󰟔', 'color': '358a5b', 'term_color': '29', },
+      \ 'r': { 'icon': '󰟔', 'color': '2266ba', 'term_color': '25', },
       \ 'rakefile': { 'icon': '', 'color': '701516', 'term_color': '52', },
       \ 'rmd': { 'icon': '', 'color': '519aba', 'term_color': '74', },
       \ 'svelte.config.js': { 'icon': '', 'color': 'ff3e00', 'term_color': '196', },
