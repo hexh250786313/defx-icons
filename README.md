@@ -1,4 +1,4 @@
-# @hexuhua/defx-icons
+# hexh250786313/defx-icons
 
 A fork of kristijanhusak/defx-icons
 
