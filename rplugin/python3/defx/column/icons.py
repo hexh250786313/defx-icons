@@ -116,6 +116,12 @@ class Column(Base):
         if filename in self.icons['exact_matches']:
             return self.icon('exact_matches', filename)
 
+        # Try to match the more specific extension first
+        specific_ext = path.name.split('.')[-2:]
+        if len(specific_ext) > 1 and '.'.join(specific_ext) in self.icons['extensions']:
+            return self.icon('extensions', '.'.join(specific_ext))
+
+        # If no specific match, try the general extension
         if ext in self.icons['extensions']:
             return self.icon('extensions', ext)
 
